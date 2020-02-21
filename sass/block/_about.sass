@@ -17,8 +17,8 @@
         max-width: 350px
         width: 100%
         &-span
-            width: 300px
-            height: 550px
+            width: 80%
+            height: calc(100% + 100px)
             background: $bg-gradient
             position: absolute
             top: -50px
@@ -30,6 +30,8 @@
             width: 100%
             height: auto
     &__text
+        animation: flipInY 1s
+        animation-delay: 0.3s
         &-item
             margin: 20px 0
             span
@@ -37,4 +39,32 @@
                 text-transform: uppercase
                 font-weight: bold
 
-                
+@media screen and (max-width: 1300px) and (min-width: 900px)
+    .about
+        &__img
+            width: 50%
+        &__text
+            width: 50%
+@media screen and (max-width: 899px) and (min-width: 750px)
+    .about
+        &__img
+            width: 40%
+        &__text
+            width: 55%
+
+@media screen and (max-width: 749px) and (min-width: 0px)
+    .about
+        &__block
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        &__img
+            margin-bottom: 30px
+            margin-right: 0
+            &-span
+                top: -30px
+                left: -30px
+                height: calc(100% + 20px)
+        &__button
+            max-width: 100%
+

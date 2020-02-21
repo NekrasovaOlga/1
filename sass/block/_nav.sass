@@ -57,3 +57,60 @@
                 opacity: 1
     &__button
         margin: 30px 35px
+
+@media screen and (max-width: 900px) and (min-width: 0px)
+    .nav
+        position: fixed
+        height: 60px
+        width: 100%
+        &-section
+            display: flex
+            justify-content: space-between
+        &-span
+            position: relative
+            width: 30px
+            background: $bg-gradient
+            height: 2px
+            right: 15px
+            top: 30px
+            z-index: 99999
+            transition: 1s   
+            &::after
+                position: absolute
+                content: ''
+                width: 30px
+                background: $bg-gradient
+                height: 2px
+                top: -7px
+            &::before
+                position: absolute
+                content: ''
+                width: 30px
+                background: $bg-gradient
+                height: 2px
+                top: 7px
+            &__active
+                background: none
+                transition: 0.3s
+                &::after
+                    transform: rotate(-45deg)
+                    top: 0
+                &::before
+                    transform: rotate(45deg)
+                    top: 0
+        &-logo
+            height: 60px
+            align-items: flex-start
+            margin-left: 15px
+            border-bottom: none
+        &-menu
+            right: 0
+            top: 0
+            width: 100%
+            max-width: 350px
+            position: absolute
+            padding-top: 60px
+    #menu
+        opacity: 0
+        transition: 0.3s
+        background: $gray

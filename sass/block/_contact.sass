@@ -43,3 +43,46 @@
             height: 50px
         textarea
             height: 100px
+@media screen and (max-width: 650px) and (min-width: 405px)
+    .contact
+        &__block
+            flex-direction: column
+            margin-bottom: 30px
+            &-adress
+                margin-bottom: 20px
+                flex-direction: row
+                justify-content: flex-start
+                align-items: center
+            &-title
+                margin: 0 10px 0 10px
+            &-text 
+                margin-top: 0
+@media screen and (max-width: 404px) and (min-width: 311px)
+    .contact
+        &__block
+            flex-direction: column
+            margin-bottom: 30px
+            &-adress
+                margin-bottom: 20px
+                flex-direction: row
+                justify-content: flex-start
+                align-items: center
+            &-title
+                display: none
+            &-text 
+                margin-left: 10px
+                margin-top: 0
+        &__form
+            display: none
+@media screen and (max-width: 310px) and (min-width: 0px)
+    .contact
+        &__block
+            flex-direction: column
+            margin-bottom: 30px
+            &-adress
+                margin-bottom: 20px
+                flex-direction: column
+                justify-content: flex-start
+                align-items: center
+        &__form
+            display: none

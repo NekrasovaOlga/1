@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/practicles.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 <body>
     <div class="nav">
@@ -16,19 +18,22 @@
                 <p class="logo__title"><span  class="logo__title-span">L</span>isenko</p>
             </div>
             <!-- /.nav_logo -->
+            <span class="nav-span" id="burger"></span>
             <div class="nav-menu">
-                <nav class="nav-menu__block">
+                <nav class="nav-menu__block" id="menu">
                     <a href="#" class="nav-menu__link nav-menu__active">Главная <span class="nav-menu__span"><i class="fas fa-home"></i></span></a>
                     <a href="#" class="nav-menu__link">Обо мне <span class="nav-menu__span"><i class="fas fa-address-card"></i></span></a>
                     <a href="#" class="nav-menu__link">Навыки <span class="nav-menu__span"><i class="fas fa-cogs"></i></span></a>
                     <a href="#" class="nav-menu__link">Резюме <span class="nav-menu__span"><i class="fas fa-graduation-cap"></i></span></a>
                     <a href="#" class="nav-menu__link">Портфолио <span class="nav-menu__span"><i class="fas fa-briefcase"></i></span></a>
                     <a href="#" class="nav-menu__link">Контакты <span class="nav-menu__span"><i class="fas fa-id-card-alt"></i></span></a>
+
+                    <button class="button nav__button">Скачать резюме</button>
                 </nav>
                 <!-- /.nav-menu__block -->
             </div>
             <!-- /.nav_menu -->
-            <button class="button nav__button">Скачать резюме</button>
+            
         </div>
         <!-- /.nav -->
     </div>
@@ -58,7 +63,7 @@
                                 <p><span>телефон: </span><a href="tel:+79614810328">+7 (961) 481 - 03 - 28</a></p>
                                 <p><span>почта: </span><a href="mailto:nekrasova.kalina@yandex.ru">nekrasova.kalina@yandex.ru</a></p>
                             </div> 
-                            <button class="button">Скачать резюме</button>
+                            <button class="button about__button">Скачать резюме</button>
                         </div>
                         <!-- /.about__block-text -->
                     </div>
@@ -137,48 +142,42 @@
                 <div class="contain">
                     <h2 class="title">Портфолио<span class="title__icon"><i class="fas fa-briefcase"></i></span></h2>
                     <div class="portfolio__block">
-                        <div class="portfolio__item">
-                            <img src="./img/job1.png" alt="" class="potfolio__item-img">
+                        <div class="portfolio__item portfolio__item6">
+                            <div class="portfolio__item-block ">
+                                <a href="#" class="portfolio__span"><i class="fas fa-search-plus"></i></a>
+                                <p class="portfolio__title">Разработка сайта</p>
+                                <div class="portfolio__description">Промо сайт к сериалу ведьмак</div>
+                            </div>
+                        </div>
+                        <div class="portfolio__item portfolio__item4">
                             <div class="portfolio__item-block">
                                 <a href="#" class="portfolio__span"><i class="fas fa-search-plus"></i></a>
                                 <p class="portfolio__title">Разработка сайта</p>
                                 <div class="portfolio__description">Промо сайт к сериалу ведьмак</div>
                             </div>
                         </div>
-                        <div class="portfolio__item">
-                            <img src="./img/job1.png" alt="" class="potfolio__item-img">
+                        <div class="portfolio__item portfolio__item3">
                             <div class="portfolio__item-block">
                                 <a href="#" class="portfolio__span"><i class="fas fa-search-plus"></i></a>
                                 <p class="portfolio__title">Разработка сайта</p>
                                 <div class="portfolio__description">Промо сайт к сериалу ведьмак</div>
                             </div>
                         </div>
-                        <div class="portfolio__item">
-                            <img src="./img/job1.png" alt="" class="potfolio__item-img">
+                        <div class="portfolio__item portfolio__item1">
                             <div class="portfolio__item-block">
                                 <a href="#" class="portfolio__span"><i class="fas fa-search-plus"></i></a>
                                 <p class="portfolio__title">Разработка сайта</p>
                                 <div class="portfolio__description">Промо сайт к сериалу ведьмак</div>
                             </div>
                         </div>
-                        <div class="portfolio__item">
-                            <img src="./img/job1.png" alt="" class="potfolio__item-img">
+                        <div class="portfolio__item portfolio__item2">
                             <div class="portfolio__item-block">
                                 <a href="#" class="portfolio__span"><i class="fas fa-search-plus"></i></a>
                                 <p class="portfolio__title">Разработка сайта</p>
                                 <div class="portfolio__description">Промо сайт к сериалу ведьмак</div>
                             </div>
                         </div>
-                        <div class="portfolio__item">
-                            <img src="./img/job1.png" alt="" class="potfolio__item-img">
-                            <div class="portfolio__item-block">
-                                <a href="#" class="portfolio__span"><i class="fas fa-search-plus"></i></a>
-                                <p class="portfolio__title">Разработка сайта</p>
-                                <div class="portfolio__description">Промо сайт к сериалу ведьмак</div>
-                            </div>
-                        </div>
-                        <div class="portfolio__item">
-                            <img src="./img/job1.png" alt="" class="potfolio__item-img">
+                        <div class="portfolio__item portfolio__item5">
                             <div class="portfolio__item-block">
                                 <a href="#" class="portfolio__span"><i class="fas fa-search-plus"></i></a>
                                 <p class="portfolio__title">Разработка сайта</p>
@@ -234,9 +233,11 @@
     </main>
     <!-- /.main -->
 <!--скрпипты-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/6f777a7a0e.js" crossorigin="anonymous"></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
     <!-- stats.js lib --> 
     <script src="./js/practicles.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
