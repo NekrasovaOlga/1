@@ -1,0 +1,41 @@
+.title
+    +artur
+    font-size: 35px
+    line-height: 28px
+    color: $orange
+    font-weight: bold
+    text-align: center
+    display: flex
+    flex-direction: column
+    &__icon
+        font-size: 20px
+        padding: 10px 0 60px 0
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        max-width: 100px
+        width: 100%
+        text-align: center
+        margin: 0 auto
+        &::before, &::after
+            content: ''
+            position: absolute
+            width: 30px
+            height: 2px
+            background: $bg-gradient
+        &::before
+            right: 0
+        &::after
+            left: 0
+            
+.logo
+    &__title
+        +artur
+        font-size: 35px
+        line-height: 28px
+        text-transform: uppercase
+        color: $white
+        height: 40px
+        &-span
+            color: $orange

@@ -1,0 +1,40 @@
+.about
+    background: $gray
+    color: $gray-light
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25)
+    z-index: 5
+    +monts
+    position: relative
+    font-size: 14px
+    line-height: 28px
+    &__block
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__img
+        margin-right: 50px
+        position: relative
+        max-width: 350px
+        width: 100%
+        &-span
+            width: 300px
+            height: 550px
+            background: $bg-gradient
+            position: absolute
+            top: -50px
+            left: -50px
+            z-index: 0
+        img
+            z-index: 9
+            position: relative
+            width: 100%
+            height: auto
+    &__text
+        &-item
+            margin: 20px 0
+            span
+                color: $white
+                text-transform: uppercase
+                font-weight: bold
+
+                

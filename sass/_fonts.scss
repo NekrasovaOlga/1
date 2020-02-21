@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Arturo Trial';
+  src: url('../font/ArturoTrial-Regular.eot');
+  src: local('Arturo Trial Regular'), local('ArturoTrial-Regular'),
+      url('../font/ArturoTrial-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../font/ArturoTrial-Regular.woff2') format('woff2'),
+      url('../font/ArturoTrial-Regular.woff') format('woff'),
+      url('../font/ArturoTrial-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../font/Montserrat-Regular.eot');
+	src: local('Montserrat Regular'), local('Montserrat-Regular'),
+		url('../font/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../font/Montserrat-Regular.woff') format('woff'),
+		url('../font/Montserrat-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+  
+@mixin artur {
+  font-family: 'Arturo Trial';
+}  
+
+@mixin monts {
+  font-family: 'Montserrat';
+}

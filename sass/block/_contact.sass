@@ -1,0 +1,45 @@
+.contact
+    background: $gray
+    +monts
+    font-size: 14px
+    color: $gray-light
+    &__block
+        display: flex
+        justify-content: space-between
+        margin-bottom: 50px
+        &-adress
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+        &-title
+            margin-top: 20px
+            font-weight: bold
+            color: $white
+            text-transform: uppercase
+        &-span
+            width: 45px
+            height: 45px
+            border-radius: 50%
+            border: 1px solid $orange
+            display: flex
+            align-items: center
+            justify-content: center
+            color: $orange
+        &-text
+            margin-top: 15px
+    &__form
+        background: #292929
+        width: 100%
+        padding: 40px 30px
+        display: flex
+        flex-direction: column
+        input, textarea
+            border-bottom: 1px solid $gray-light
+            margin-bottom: 20px
+            color: $white
+            padding: 10px 15px
+        input
+            height: 50px
+        textarea
+            height: 100px
