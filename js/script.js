@@ -17,11 +17,11 @@ const menu = document.getElementById('burger');
 menu.onclick = function(){
     menu.classList.toggle('nav-span__active');
 if(menu.classList.contains('nav-span__active')){
+    nav.style.display = 'flex';
     nav.style.opacity = '1';
-    nav.style.right = '0';
 }else{
+    nav.style.display = 'block';
     nav.style.opacity = '0';
-    nav.style.left = '0';
 }
 };
 
