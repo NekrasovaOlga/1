@@ -21,14 +21,14 @@
             <span class="nav-span" id="burger"></span>
             <div class="nav-menu">
                 <nav class="nav-menu__block" id="menu">
-                    <a href="#" class="nav-menu__link nav-menu__active">Главная <span class="nav-menu__span"><i class="fas fa-home"></i></span></a>
-                    <a href="#" class="nav-menu__link">Обо мне <span class="nav-menu__span"><i class="fas fa-address-card"></i></span></a>
-                    <a href="#" class="nav-menu__link">Навыки <span class="nav-menu__span"><i class="fas fa-cogs"></i></span></a>
-                    <a href="#" class="nav-menu__link">Резюме <span class="nav-menu__span"><i class="fas fa-graduation-cap"></i></span></a>
-                    <a href="#" class="nav-menu__link">Портфолио <span class="nav-menu__span"><i class="fas fa-briefcase"></i></span></a>
-                    <a href="#" class="nav-menu__link">Контакты <span class="nav-menu__span"><i class="fas fa-id-card-alt"></i></span></a>
+                    <a href="#home" class="nav-menu__link nav-menu__active"  >Главная <span class="nav-menu__span"><i class="fas fa-home"></i></span></a>
+                    <a href="#about" class="nav-menu__link">Обо мне <span class="nav-menu__span"><i class="fas fa-address-card"></i></span></a>
+                    <a href="#skill" class="nav-menu__link">Навыки <span class="nav-menu__span"><i class="fas fa-cogs"></i></span></a>
+                    <a href="#resume" class="nav-menu__link">Резюме <span class="nav-menu__span"><i class="fas fa-graduation-cap"></i></span></a>
+                    <a href="#portfolio" class="nav-menu__link">Портфолио <span class="nav-menu__span"><i class="fas fa-briefcase"></i></span></a>
+                    <a href="#contact" class="nav-menu__link">Контакты <span class="nav-menu__span"><i class="fas fa-id-card-alt"></i></span></a>
 
-                    <button class="button nav__button">Скачать резюме</button>
+                    <a href="http://lisenko.website/portfolio.doc" class="button nav__button">Скачать резюме</a>
                 </nav>
                 <!-- /.nav-menu__block -->
             </div>
@@ -40,19 +40,19 @@
     <!-- /.nav-section -->
     <main class="main">
         <div class="main-section">
-            <div class="hero">
+            <div class="hero" id="home">
                 <div id="particles-js"></div>
                     <h1  class="hero__title">Привет, я Ольга <br>
-                    <span>WEB - Разработчик</span></h1>
+                    <span id="typed"></span></h1>
 
                     <span class="hero__span"></span>
             </div>
             <!-- /.hero -->
 
-            <div class="about">
+            <div class="about" id="about">
                 <div class="contain">
                     <h2 class="title">Обо мне <span class="title__icon"><i class="fas fa-address-card"></i></span></h2>
-                    <div class="about__block">
+                    <div class="about__block  wow fadeInDown">
                         <div class="about__img"><span class="about__img-span"></span><img src="./img/bend.jpg" alt=""></div>
                         <div class="about__text">
                             <p>Меня зовут Ольга, я начинающий веб разработчик. Ищу работу веб разработчиком для получения опыта в данной сфере, а так же хочу научится работе в команде. Возможно есть пробелы в знаниях, но я уверена что смогу достаточно быстро закрыть эти пробелы обучаясь и практикуясь с опытными разработчиками. </p>
@@ -63,7 +63,7 @@
                                 <p><span>телефон: </span><a href="tel:+79614810328">+7 (961) 481 - 03 - 28</a></p>
                                 <p><span>почта: </span><a href="mailto:nekrasova.kalina@yandex.ru">nekrasova.kalina@yandex.ru</a></p>
                             </div> 
-                            <button class="button about__button">Скачать резюме</button>
+                            <a href="http://lisenko.website/portfolio.doc" class="button about__button">Скачать резюме</a>
                         </div>
                         <!-- /.about__block-text -->
                     </div>
@@ -71,29 +71,34 @@
                 </div>
             </div>
             <!-- /.about -->
-            <div class="skill">
+            <div class="skill" id='skill'>
                 <div class="contain">
                     <h2 class="title">Навыки<span class="title__icon"><i class="fas fa-cogs"></i></span></h2>
                     <div class="skill__block">
                         <div class="skill__item">
+                            <div id="circle" class="circle skill__item-border" ></div>
                             <span class="skill__item-span">90%</span>
                             <p class="skill__item-text">HTML</p>
                         </div>
                         <div class="skill__item">
-                            <span class="skill__item-span">90%</span>
-                            <p class="skill__item-text">HTML</p>
+                            <div id="circle1" class="circle skill__item-border"></div>
+                            <span class="skill__item-span">80%</span>
+                            <p class="skill__item-text">Css</p>
                         </div>
                         <div class="skill__item">
-                            <span class="skill__item-span">90%</span>
-                            <p class="skill__item-text">HTML</p>
+                            <div id="circle2" class="circle skill__item-border"></div>
+                            <span class="skill__item-span">60%</span>
+                            <p class="skill__item-text">JavaScript</p>
                         </div>
                         <div class="skill__item">
-                            <span class="skill__item-span">90%</span>
-                            <p class="skill__item-text">HTML</p>
+                            <div id="circle3" class="circle skill__item-border"></div>
+                            <span class="skill__item-span">70%</span>
+                            <p class="skill__item-text">Photoshop</p>
                         </div>
                         <div class="skill__item">
-                            <span class="skill__item-span">90%</span>
-                            <p class="skill__item-text">HTML</p>
+                            <div id="circle4" class="circle skill__item-border"></div>
+                            <span class="skill__item-span">80%</span>
+                            <p class="skill__item-text">Git</p>
                         </div>
                     </div>
                     <!-- /.contain__block -->
@@ -101,11 +106,11 @@
             </div>
             <!-- /.skill -->
 
-            <div class="resume">
+            <div class="resume" id="resume">
                 <div class="contain">
                     <h2 class="title">Резюме<span class="title__icon"><i class="fas fa-graduation-cap"></i></span></h2>
                     <div class="resume__block">
-                        <div class="resume__item">
+                        <div class="resume__item  wow fadeInDown">
                             <div class="resume__item-data">
                                 <p>2014 - 2018</p>
                                 <span class="resume__item-span"><i class="fas fa-graduation-cap"></i></span>
@@ -119,7 +124,7 @@
                         </div>
                         <!-- /.resume__item -->
 
-                        <div class="resume__item">
+                        <div class="resume__item  wow fadeInDown"">
                             <div class="resume__item-data">
                                 <p>2017 - 2020</p>
                                 <span class="resume__item-span"><i class="fas fa-briefcase"></i></span>
@@ -138,46 +143,46 @@
             </div>
             <!-- /.resume -->
 
-            <div class="portfolio">
+            <div class="portfolio" id="portfolio">
                 <div class="contain">
                     <h2 class="title">Портфолио<span class="title__icon"><i class="fas fa-briefcase"></i></span></h2>
                     <div class="portfolio__block">
-                        <div class="portfolio__item portfolio__item6">
+                        <div class="portfolio__item portfolio__item6 wow fadeInDown">
                             <div class="portfolio__item-block ">
                                 <a href="#" class="portfolio__span"><i class="fas fa-search-plus"></i></a>
                                 <p class="portfolio__title">Разработка сайта</p>
                                 <div class="portfolio__description">Промо сайт к сериалу ведьмак</div>
                             </div>
                         </div>
-                        <div class="portfolio__item portfolio__item4">
+                        <div class="portfolio__item portfolio__item4 wow fadeInDown">
                             <div class="portfolio__item-block">
                                 <a href="#" class="portfolio__span"><i class="fas fa-search-plus"></i></a>
                                 <p class="portfolio__title">Разработка сайта</p>
                                 <div class="portfolio__description">Промо сайт к сериалу ведьмак</div>
                             </div>
                         </div>
-                        <div class="portfolio__item portfolio__item3">
+                        <div class="portfolio__item portfolio__item3 wow fadeInDown">
                             <div class="portfolio__item-block">
                                 <a href="#" class="portfolio__span"><i class="fas fa-search-plus"></i></a>
                                 <p class="portfolio__title">Разработка сайта</p>
                                 <div class="portfolio__description">Промо сайт к сериалу ведьмак</div>
                             </div>
                         </div>
-                        <div class="portfolio__item portfolio__item1">
+                        <div class="portfolio__item portfolio__item1 wow fadeInDown">
                             <div class="portfolio__item-block">
                                 <a href="#" class="portfolio__span"><i class="fas fa-search-plus"></i></a>
                                 <p class="portfolio__title">Разработка сайта</p>
                                 <div class="portfolio__description">Промо сайт к сериалу ведьмак</div>
                             </div>
                         </div>
-                        <div class="portfolio__item portfolio__item2">
+                        <div class="portfolio__item portfolio__item2 wow fadeInDown">
                             <div class="portfolio__item-block">
                                 <a href="#" class="portfolio__span"><i class="fas fa-search-plus"></i></a>
                                 <p class="portfolio__title">Разработка сайта</p>
                                 <div class="portfolio__description">Промо сайт к сериалу ведьмак</div>
                             </div>
                         </div>
-                        <div class="portfolio__item portfolio__item5">
+                        <div class="portfolio__item portfolio__item5 wow fadeInDown">
                             <div class="portfolio__item-block">
                                 <a href="#" class="portfolio__span"><i class="fas fa-search-plus"></i></a>
                                 <p class="portfolio__title">Разработка сайта</p>
@@ -190,7 +195,7 @@
             </div>
             <!-- /.portfolio -->
 
-            <div class="contact">
+            <div class="contact" id="contact">
                 <div class="contain">
                     <h2 class="title">Контакты<span class="title__icon"><i class="fas fa-id-card-alt"></i></span></h2>
 
@@ -213,7 +218,7 @@
                     </div>
                     <!-- /.contact__block -->
 
-                    <form action="" class="contact__form">
+                    <form action="" class="contact__form  wow fadeInDown">
                         <input type="text" name="contact" id="name" placeholder="Имя">
                         <input type="tel" name="contact" id="tel" placeholder="Почта">
                         <input type="email" name="contact" id="email" placeholder="Телефон">
@@ -233,11 +238,18 @@
     </main>
     <!-- /.main -->
 <!--скрпипты-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/6f777a7a0e.js" crossorigin="anonymous"></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="./js/wow.min.js"></script>
     <!-- stats.js lib --> 
     <script src="./js/practicles.js"></script>
+    <script src="./js/circle-progress.min.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+        new WOW().init();
+        
+    </script>
 </body>
 </html>

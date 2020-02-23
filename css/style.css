@@ -19,6 +19,10 @@
           box-sizing: border-box;
 }
 
+*:focus, *:active {
+  outline: none;
+}
+
 body {
   font-family: 'Montserrat';
   font-size: 14px;
@@ -212,6 +216,10 @@ input placeholder, textarea placeholder {
           flex-direction: column;
 }
 
+.nav-menu a:focus, .nav-menu a:active {
+  outline: none;
+}
+
 .nav-menu__link {
   height: 50px;
   display: -webkit-box;
@@ -236,6 +244,10 @@ input placeholder, textarea placeholder {
 }
 
 .nav-menu__link:hover span {
+  opacity: 1;
+}
+
+.nav-menu__link:active:focus span {
   opacity: 1;
 }
 
@@ -283,6 +295,9 @@ input placeholder, textarea placeholder {
 @media screen and (max-width: 900px) and (min-width: 0px) {
   .nav {
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
     height: 60px;
     width: 100%;
   }
@@ -314,6 +329,8 @@ input placeholder, textarea placeholder {
     background: linear-gradient(to right, #f7971c 0%, #f34a4a 100%);
     height: 2px;
     top: -7px;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
   }
   .nav-span::before {
     position: absolute;
@@ -322,6 +339,8 @@ input placeholder, textarea placeholder {
     background: -webkit-gradient(linear, left top, right top, from(#f7971c), to(#f34a4a));
     background: linear-gradient(to right, #f7971c 0%, #f34a4a 100%);
     height: 2px;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
     top: 7px;
   }
   .nav-span__active {
@@ -332,12 +351,16 @@ input placeholder, textarea placeholder {
   .nav-span__active::after {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
     top: 0;
   }
   .nav-span__active::before {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     top: 0;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
   }
   .nav-logo {
     height: 60px;
@@ -520,13 +543,6 @@ input placeholder, textarea placeholder {
   height: auto;
 }
 
-.about__text {
-  -webkit-animation: flipInY 1s;
-          animation: flipInY 1s;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-
 .about__text-item {
   margin: 20px 0;
 }
@@ -613,13 +629,13 @@ input placeholder, textarea placeholder {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-right: 15px;
+  position: relative;
 }
 
 .skill__item-span {
-  border: 1px solid #FA9B1B;
   width: 150px;
   height: 150px;
-  position: relatives;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -628,10 +644,16 @@ input placeholder, textarea placeholder {
           align-items: center;
   font-size: 36px;
   color: #fff;
-  border-radius: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.skill__item-border {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
 .skill__item-text {

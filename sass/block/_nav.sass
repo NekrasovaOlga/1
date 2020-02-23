@@ -18,6 +18,9 @@
         &__block
             display: flex
             flex-direction: column
+        a
+            &:focus, &:active
+                outline: none
         &__link
             height: 50px
             display: flex
@@ -33,6 +36,8 @@
             &:hover
                 color: $white
             &:hover span
+                opacity: 1
+            &:active:focus span
                 opacity: 1
         &__span
             position: relative
@@ -61,6 +66,9 @@
 @media screen and (max-width: 900px) and (min-width: 0px)
     .nav
         position: fixed
+        top: 0
+        left: 0
+        z-index: 99999
         height: 60px
         width: 100%
         &-section
@@ -82,22 +90,26 @@
                 background: $bg-gradient
                 height: 2px
                 top: -7px
+                transition: 0.7s
             &::before
                 position: absolute
                 content: ''
                 width: 30px
                 background: $bg-gradient
                 height: 2px
+                transition: 0.7s
                 top: 7px
             &__active
                 background: none
                 transition: 0.3s
                 &::after
                     transform: rotate(-45deg)
+                    transition: 0.7s
                     top: 0
                 &::before
                     transform: rotate(45deg)
                     top: 0
+                    transition: 0.7s
         &-logo
             height: 60px
             align-items: flex-start
