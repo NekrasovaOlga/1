@@ -305,18 +305,21 @@ input placeholder, textarea placeholder {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .nav-span {
-    position: relative;
+    position: absolute;
     width: 30px;
     background: -webkit-gradient(linear, left top, right top, from(#f7971c), to(#f34a4a));
     background: linear-gradient(to right, #f7971c 0%, #f34a4a 100%);
     height: 2px;
-    right: 15px;
-    top: 30px;
-    z-index: 99999;
+    z-index: 12;
+    display: block;
     -webkit-transition: 1s;
     transition: 1s;
+    right: 15px;
   }
   .nav-span::after {
     position: absolute;
@@ -368,19 +371,67 @@ input placeholder, textarea placeholder {
     border-bottom: none;
   }
   .nav-menu {
-    right: 0;
-    top: 0;
+    left: 0;
+    top: 60px;
     width: 100%;
-    max-width: 350px;
+    display: block;
     position: absolute;
-    padding-top: 60px;
+  }
+  .nav-menu__block {
+    position: absolute;
+    padding-top: 20px;
+    width: 100%;
+    height: 100vh;
+  }
+  .nav-menu__link {
+    height: auto;
+    padding: 9px 34px;
+    border-bottom: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .nav__button {
+    display: none;
   }
   #menu {
-    opacity: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
     background: #333333;
     display: none;
+  }
+}
+
+@-webkit-keyframes menu {
+  from {
+    right: -999px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes menu {
+  from {
+    right: -999px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@-webkit-keyframes menu2 {
+  from {
+    right: 0;
+  }
+  to {
+    right: -999px;
+  }
+}
+
+@keyframes menu2 {
+  from {
+    right: 0;
+  }
+  to {
+    right: -999px;
   }
 }
 

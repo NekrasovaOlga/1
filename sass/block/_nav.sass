@@ -66,21 +66,21 @@
 @media screen and (max-width: 900px) and (min-width: 0px)
     .nav
         position: fixed
-
         height: 60px
         width: 100%
         &-section
             display: flex
             justify-content: space-between
+            align-items: center
         &-span
-            position: relative
+            position: absolute
             width: 30px
             background: $bg-gradient
             height: 2px
-            right: 15px
-            top: 30px
-            z-index: 99999
+            z-index: 12
+            display: block
             transition: 1s   
+            right: 15px
             &::after
                 position: absolute
                 content: ''
@@ -114,14 +114,37 @@
             margin-left: 15px
             border-bottom: none
         &-menu
-            right: 0
-            top: 0
+            left: 0
+            top: 60px
             width: 100%
-            max-width: 350px
+            display: block
             position: absolute
-            padding-top: 60px
+            &__block
+                position: absolute
+                padding-top: 20px
+                width: 100%
+                height: 100vh
+            &__link
+                height: auto
+                padding: 9px 34px
+                border-bottom: none
+                box-shadow: none
+
+        &__button
+            display: none
     #menu
-        opacity: 0
-        transition: 0.3s
         background: $gray
         display: none
+@keyframes menu
+    from
+        right: -999px
+    to
+        right: 0
+
+@keyframes menu2
+    from
+        right: 0
+    to
+        right: -999px
+
+ 
