@@ -165,8 +165,6 @@ input placeholder, textarea placeholder {
   background: linear-gradient(to right, #f7971c 0%, #f34a4a 100%);
   color: #fff;
   border-radius: 5px;
-  -webkit-transition: 3.5s all;
-  transition: 3.5s all;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -1134,8 +1132,9 @@ input placeholder, textarea placeholder {
     margin-left: 10px;
     margin-top: 0;
   }
-  .contact__form {
-    display: none;
+  .contact__form button {
+    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -1160,8 +1159,10 @@ input placeholder, textarea placeholder {
         -ms-flex-align: center;
             align-items: center;
   }
-  .contact__form {
-    display: none;
+  .contact__form button {
+    max-width: 100%;
+    width: 100%;
+    font-size: 0.8em;
   }
 }
 

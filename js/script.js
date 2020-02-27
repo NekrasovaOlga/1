@@ -1,6 +1,24 @@
-
-
 const nav = document.getElementById('menu');
+let items = document.querySelectorAll('.nav-menu__link');
+let menu = document.querySelector('#burger');
+
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+    var scrollPos = $(document).scrollTop();
+    $('#menu a').each(function () {
+      var currLink = $(this);
+      var refElement = $(currLink.attr("href"));
+      if (refElement.position().top + -50 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+          $('#menu a').removeClass("nav-menu__active");
+          currLink.addClass("nav-menu__active");
+      }
+      else{
+          currLink.removeClass("nav-menu__active");
+      }
+      });
+   });
+});
 
 $('#menu').on('click', 'a', function(event){
 event.preventDefault();
@@ -12,7 +30,6 @@ $('body,html').animate({scrollTop: top}, 1000);
 });
 
 
-var menu = document.querySelector('#burger');
 
 menu.onclick = function(){
     menu.classList.toggle('nav-span__active');
@@ -58,7 +75,7 @@ var wow = new WOW(
   );
 
 
-let items = document.querySelectorAll('.nav-menu__link');
+
 
 for( let i = 0; i < items.length; i++ ){
   items[i].addEventListener ('click', function(){
@@ -116,4 +133,5 @@ $('#circle4').circleProgress({
     gradient: ["red", "orange"]
   }
 });
+
 

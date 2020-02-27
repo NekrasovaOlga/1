@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Промосайт Ольги Лысенко</title>
+    <link rel="shortcut icon" href="./img/flaticon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/practicles.css">
@@ -27,9 +28,9 @@
                     <a href="#resume" class="nav-menu__link">Резюме <span class="nav-menu__span"><i class="fas fa-graduation-cap"></i></span></a>
                     <a href="#portfolio" class="nav-menu__link">Портфолио <span class="nav-menu__span"><i class="fas fa-briefcase"></i></span></a>
                     <a href="#contact" class="nav-menu__link">Контакты <span class="nav-menu__span"><i class="fas fa-id-card-alt"></i></span></a>
-
-                    <a href="http://lisenko.website/portfolio.doc" class="button nav__button">Скачать резюме</a>
                 </nav>
+                    <a href="http://lisenko.website/portfolio.doc" class="button nav__button">Скачать резюме</a>
+               
                 <!-- /.nav-menu__block -->
             </div>
             <!-- /.nav_menu -->
@@ -38,7 +39,7 @@
         <!-- /.nav -->
     </div>
     <!-- /.nav-section -->
-    <main class="main">
+    <main class="main" id="main">
         <div class="main-section">
             <div class="hero" id="home">
                 <div id="particles-js"></div>
@@ -218,12 +219,12 @@
                     </div>
                     <!-- /.contact__block -->
 
-                    <form action="" class="contact__form  wow fadeInDown">
+                    <form action="./php/mail.php" method="POST" class="contact__form  wow fadeInDown">
                         <input type="text" name="contact" id="name" placeholder="Имя">
                         <input type="tel" name="contact" id="tel" placeholder="Почта">
                         <input type="email" name="contact" id="email" placeholder="Телефон">
                         <textarea name="contact" id="text" cols="30" rows="10" placeholder="Напишите ваше сообщение"></textarea>
-                        <button class="button">Заказать звонок</button>
+                        <button class="button" type="submit">Заказать звонок</button>
                     </form>
                     <!-- /.contact__form -->
 
@@ -249,7 +250,6 @@
     <script src="./js/script.js"></script>
     <script>
         new WOW().init();
-        
     </script>
 </body>
 </html>
