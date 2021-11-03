@@ -47,10 +47,9 @@ if(menu.classList.contains('nav-span__active')){
 
 var typed = new Typed('#typed', {
     strings: [
-        'WEB-разработчик', 
-        'контент-менеджер', 
-        'ищу работу', 
-        'быстро учусь'],
+        'текст 1', 
+        'текст 2', 
+        'текст 3'],
         typeSpeed: 100,
         backSpeed: 50,
         startDelay: 10,
