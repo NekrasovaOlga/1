@@ -1,0 +1,165 @@
+#main
+    position: relative
+    min-height: 715px
+    height: auto
+    background: #151516
+.main
+    
+    padding-top: 53px
+    position: relative
+    &-arrow
+        width: 48px
+        height: 48px
+        background: rgba(255, 255, 255, 0.08)
+        border-radius: 50px
+        position: absolute
+        bottom: 48px
+        right: 0
+        z-index: 5
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        &-right
+            right: 68px
+    &__slider
+        &-item
+            display: flex !important
+            padding-right: 10px
+    &__subtitle
+        padding-bottom: 16px
+        color: rgba(255, 255, 255, 0.72)
+    &__description
+        margin-top: 24px
+        margin-bottom: 34px
+    &__block
+        width: 690px
+        padding-top: 50px
+        margin-right: 80px
+    &__img
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center center 
+        width: 520px
+        height: 510px
+        margin-bottom: 152px
+    &__button
+        display: flex 
+        &-color
+            background: $orange
+            margin-right: 16px
+            i
+                padding-left: 12px
+                font-size: 14px
+    &__dots
+        position: absolute
+        width: 120px
+        height: 2px
+        background: #262626
+        border-radius: 100px
+        bottom: 72px
+        display: flex
+        margin: 0 30px
+        .slick-current
+            .main__dots-number
+                &::before
+                    background: $orange
+        &::after, &::before
+            position: absolute
+            font-size: 18px
+            color: #F5F5F5
+            top: 50%
+            transform: translate(0, -50%)
+        &::after
+            content: '01'    
+            left: -30px
+        &::before
+            content: '03'
+            right: -30px
+        &-number
+            &::before
+                position: absolute
+                content: ''
+                right: -30px
+                border-radius: 100px
+                width: 40px
+                height: 2px
+                top: 0
+                left: 0
+            
+            &2
+                &::before
+                    left: 40px
+            &3
+                &::before
+                    left: 80px
+                
+@media screen and (max-width: 1318px) and (min-width: 930px)
+    .main
+        &__block
+            margin-right: 26px
+        &__subtitle
+            margin-bottom: 26px
+        &__img
+            width: 852px
+        &__description
+            font-size: 20px
+        .main-title
+            margin-top: 16px
+            font-size: 40px
+@media screen and (max-width: 983px)
+    .main
+        .btn
+            padding: 6px 13px
+@media screen and (max-width: 929px)
+    #main
+        min-height: auto
+    .main
+        &__block
+            padding-top: 0
+            margin-right: 26px
+        &__subtitle
+            margin-bottom: 26px
+        &__img
+            width: 753px
+            height: 401px
+        &__description
+            font-size: 18px
+        .main-title
+            margin-top: 16px
+            font-size: 36px
+@media screen and (max-width: 831px)
+    .main
+        padding: 32px 0
+        &__block
+            width: 100%
+        &__slider
+            &-item
+                flex-direction: column-reverse
+        &__img
+            margin-bottom: 31px
+            width: 100%
+        &__dots.slick-slider
+            display: none
+        &-arrow
+            top: 20%
+            border-radius: 0
+            &-right
+                left: 0
+            &-left
+                right: 10px
+        .btn
+            padding: 6px 32px
+
+@media screen and (max-width: 831px)
+    .main
+        .main-title
+            font-size: 24px
+        &__subtitle, &__description
+            font-size: 16px
+        &__button
+            flex-direction: column
+            &-color
+                margin-right: 0
+                margin-bottom: 15px
+

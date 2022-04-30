@@ -1,0 +1,78 @@
+#services
+    background: #1B1B1C
+    padding-bottom: 72px
+.services
+    position: relative
+    padding-top: 72px
+    
+    &__description
+        display: flex
+        justify-content: space-between
+        padding-bottom: 48px
+        p
+            max-width: 630px
+            width: 100%
+            font-size: 20px
+    &__block
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &-item
+            position: relative
+            max-width: 410px
+            width: 100%
+            height: 320px
+            background: #212122
+            padding: 32px
+            border-radius: 4px
+            margin-bottom: 30px
+        &-title
+            margin-top: 32px
+            font-size: 24px
+        &-link
+            position: absolute
+            bottom: 32px
+            font-size: 16px
+            display: flex
+            align-items: center
+            i
+                padding-left: 12px
+
+@media screen and (max-width: 1318px) and (min-width: 1042px)
+    .services
+        &__description
+            p
+                max-width: 60%
+                font-size: 1rem
+        &__block
+            justify-content: space-around
+            &-item
+                max-width: 320px
+            &-title
+                font-size: 20px
+@media screen and (max-width: 1041px) and (min-width: 720px)
+    .services
+        &__description
+            p
+                max-width: 55%
+                font-size: 1rem
+        &__block
+            justify-content: space-around
+            &-item
+                max-width: 48%
+            &-title
+                font-size: 20px    
+@media screen and (max-width: 719px) and (min-width: 0px)
+    .services
+        &__description
+            flex-direction: column
+            p
+                padding-top: 38px
+                font-size: 16px 
+        &__block
+            justify-content: space-around
+            &-item
+                max-width: 100%
+                padding-right: 10px
+            &-title
+                font-size: 18px

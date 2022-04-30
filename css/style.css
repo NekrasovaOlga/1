@@ -456,7 +456,6 @@ input placeholder, textarea placeholder {
 }
 
 .hero__title {
-  font-family: 'Arturo Trial';
   font-weight: bold;
   font-size: 48px;
   line-height: 80px;
@@ -858,7 +857,7 @@ input placeholder, textarea placeholder {
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: flex-start;
 }
 
 .portfolio__item {
@@ -866,20 +865,28 @@ input placeholder, textarea placeholder {
   width: 300px;
   height: 300px;
   margin-bottom: 20px;
+  margin-right: 2%;
 }
 
 .portfolio__item6 {
+  background: url(../img/geomarket.jpg);
+  background-size: cover;
+}
+.portfolio__item2 {
+  background: url(../img/img2.jpg);
+  background-size: cover;
+}
+.portfolio__item1 {
   background: url(../img/job1.png);
   background-size: cover;
 }
-
 .portfolio__item4 {
-  background: url(../img/img2.jpg);
+  background: url(../img/degree.jpg);
   background-size: cover;
 }
 
 .portfolio__item3 {
-  background: url(../img/img3.jpg);
+  background: url(../img/rent.jpg);
   background-size: cover;
 }
 

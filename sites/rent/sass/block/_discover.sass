@@ -1,0 +1,103 @@
+.discover
+    position: relative
+    margin-top: 95px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    overflow: hidden
+    width: 100%
+    &__box
+        max-width: 477px
+        width: 100%
+        margin-top: 25px
+        &-title
+            font-size: 2.5em
+            line-height: 51px
+        &-description
+            font-size: 20px
+            line-height: 25px
+            padding: 25px 0
+        &-btn
+            max-width: 165px
+.slider
+    display: flex
+    position: relative
+    right: 0
+    top: 0
+    max-width: 827px
+    width: 100%
+    align-items: flex-end
+    height: 381px
+    &__item
+        max-width: 235px
+        width: 100%
+        margin-right: 25px
+        font-size: 14px
+        height: 330px
+        margin-top: 51px
+        transition: 0.3s all
+        img
+            width: 100%
+        &-title
+            font-size: 18px
+            margin-top: 10px
+        &-text
+            height: 0
+            overflow: hidden
+    .slick-current
+        
+        .slider__item
+            margin-top: 0
+            &-text
+                height: auto
+
+.slick-slide
+    border: none
+    outline: none
+
+
+@media screen and ( max-width: 1260px ) and (min-width: 1056px)
+    .slider
+        max-width: 596px
+
+@media screen and ( max-width: 1055px ) and (min-width: 836px)
+    .discover
+        margin-top: 45px
+    .slider
+        max-width: 396px
+@media screen and ( max-width: 835px ) and (min-width: 656px)
+    .discover
+        margin-top: 25px
+        &__box
+            &-title
+                font-size: 2.2em
+    .slider
+        max-width: 296px
+@media screen and ( max-width: 655px ) and (min-width: 0)
+    .discover
+        flex-direction: column
+        margin-top: 25px
+        &__box
+            max-width: 96%
+            &-title
+                font-size: 2em
+                max-width: 100%
+            &-description
+                font-size: 1em
+                max-width: 100%
+    .slider
+        margin-top: 25px
+        max-width: 100%
+
+@media screen and ( max-width: 320px ) and (min-width: 0)
+    .discover
+        &__box
+            &-title
+                font-size: 1.5em
+                max-width: 222px
+                width: 100%
+            &-description
+                font-size: 1em
+                max-width: 100%
+
+

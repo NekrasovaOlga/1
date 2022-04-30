@@ -1,0 +1,154 @@
+#map
+    position: relative
+    color: $white
+    height: 641px
+    background-image: url(../img/map.png)
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: top 15px center 
+    
+.map
+    position: relative
+    width: 100%
+    height: auto
+    .slick-list
+        overflow: visible
+    &__title
+        text-align: center
+    &__dots
+        position: relative
+        height: 641px
+        .slick-slide
+            .map
+                &__item-dots
+
+                    transition: 0.3s ease-in
+                    position: absolute
+                    &::after
+                        position: absolute
+                        content: ''
+                        width: 18px
+                        height: 18px
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        border-radius: 50px
+                        background: $orange
+                        transition: 0.5s
+                    &::before
+                        position: absolute
+                        content: ''
+                        background: transparent
+                        width: 10px
+                        height: 10px
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        border-radius: 50px
+                        transition: 0.5s
+                        z-index: 9
+                    &-1
+                        top: 83px
+                        left: 300px
+                    &-2
+                        top: 456px
+                        left: 693px
+                    &-3
+                        top: 254px
+                        left: 889px
+                    &-4
+                        top: 305px
+                        left: 965px
+                    &-5
+                        top: 498px
+                        left: 986px
+                    &-6
+                        top: 447px
+                        left: 1039px
+                    &:hover 
+                        &::after
+                            transform: translate(-50%, -50%) scale(2, 2)
+                            z-index: 4
+                        &::before
+                            background: #1B1B1C
+                            transform: translate(-50%, -50%) scale(1.5, 1.5)
+                &__item
+                    height: 641px
+                    
+                    &-cart
+                        width: 230px
+                        height: 216px
+                        background: $white
+                        border-radius: 4px
+                        padding: 24px
+                        position: absolute
+                        left: -228px
+                        top: -214px
+                        display: none
+                    &-title
+                        color: #18252B
+                        font-weight: 600
+                        font-size: 18px
+                        line-height: 145%
+                    &-description
+                        padding: 6px 0 20px
+                        font-size: 12px
+                        line-height: 16px
+                        color: #949FA3
+                    &-price
+                        font-size: 36px
+                        line-height: 36px
+                        color: $orange
+                        padding-bottom: 8px
+                    &-text
+                        font-size: 14px
+                        line-height: 145%
+                        color: #434345
+.map__dots .slick-current 
+    .map__item-cart
+        display: block
+        z-index: 10
+    .map__item-dots
+        &::after
+            width: 24px
+            height: 24px
+            z-index: 11
+        &::before
+            background: $white
+            width: 10px
+            height: 10px
+            z-index: 12
+        &:hover 
+            &::after
+                transform: translate(-50%, -50%) scale(1, 1)
+                z-index: 11
+            &::before
+                transform: translate(-50%, -50%) scale(1, 1)
+                
+                    
+@media screen and (max-width: 1318px) and (min-width: 1134px)
+    #map
+        .container
+            overflow: visible
+    .map
+        &__dots
+            position: relative
+            height: 641px
+            .slick-slide
+                .map
+                    &__item-dots
+                        &-1
+                            left: 185px
+                        &-2
+                            left: 572px
+                        &-3
+                            left: 754px
+                        &-4
+                            left: 860px
+                        &-5
+                            left: 862px
+                        &-6
+                            left: 926px
+@media screen and (max-width: 1133px)
+    #map
+        display: none

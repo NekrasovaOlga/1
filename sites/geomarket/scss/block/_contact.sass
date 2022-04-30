@@ -1,0 +1,74 @@
+#contact
+    position: relative
+    margin-bottom: 100px
+.contact
+    border: 1px solid #4C4C4E
+    position: relative
+    box-sizing: border-box
+    border-radius: 4px
+    padding: 40px 45px
+    height: 580px
+    display: flex
+    justify-content: space-between
+    &__block
+        width: 480px
+    &__text
+        font-size: 20px
+        margin-bottom: 20px
+    &__link
+        display: inline-block
+        font-size: 36px
+        padding-bottom: 16px
+    &__btn
+        position: absolute
+        bottom: 40px
+    &__img
+        width: 600px
+        height: 500px
+        background-size: cover
+        background-repeat: no-repeat
+
+@media screen and (max-width: 1318px) and (min-width: 896px)
+    .contact
+        &__link
+            font-size: 1.5rem
+    
+@media screen and (max-width: 895px) and (min-width: 754px)
+    .contact
+        height: 420px
+        &__link
+            font-size: 20px
+        &__img
+            height: 343px
+@media screen and (max-width: 753px) and (min-width: 0px)
+    .contact
+        height: auto
+        flex-direction: column-reverse
+        padding: 20px 25px
+        &__block
+            width: 100%
+            display: flex
+            flex-direction: column
+        &__link
+            font-size: 18px
+        &__img
+            width: 100%
+            height: 252px 
+            margin-bottom: 32px
+        &__btn
+            max-width: 300px
+            position: relative
+            bottom: 0
+            margin-right: 0
+            margin-top: 32px
+@media screen and (max-width: 757px) 
+    .contact
+        padding: 20px 15px
+        &__img
+            
+        &__link
+            font-size: 16px
+        &__btn
+            position: relative
+            padding: 0
+            width: 100%

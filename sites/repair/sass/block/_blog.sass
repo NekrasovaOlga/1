@@ -1,0 +1,33 @@
+.blog
+    &-section
+        position: relative
+        background: #f5f9fa
+    &__block
+        display: flex
+        justify-content: space-between
+        padding-bottom: 68px
+    &__item
+        text-align: center
+        width: 48%
+        &-img
+            margin-bottom: 38px
+            img
+                width: 100%
+        &-link
+            font-size: 16px
+            color: #19b5fe
+            line-height: 20px
+            
+            &:hover
+                text-decoration: underline
+                cursor: pointer
+
+@media screen and ( max-width: 650px ) and (min-width: 0)
+    .blog
+        &__block
+            flex-direction: column
+        &__item
+            width: 100%
+            margin-bottom: 40px
+            box-shadow: 0 0 5px 0 #bebebe
+            padding: 15px 0

@@ -1,0 +1,120 @@
+.header
+    position: relative
+.navigation
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 78px
+    position: relative
+    +roboto
+    margin-bottom: 90px
+    opacity: 1
+.nav
+    display: flex
+    align-items: center
+    &_burger
+        display: none
+        &_span
+            display: none
+    &_logo
+        margin-right: 68px
+    &_menu
+        &_link
+            margin-right: 28px
+.social
+    &_link
+        margin-left: 21px
+
+
+@media screen and (max-width: 565px)
+    .header
+        position: absolute
+        right: 0
+        top: 0
+        width: 250px
+        height: 282px
+    .nav
+        flex-direction: column
+        
+        &_logo
+            top: 39px
+            position: absolute
+        &_menu
+            flex-direction: column
+            display: flex
+            text-align: center
+            &_link
+                margin: 0
+                margin-bottom: 17px
+        &_burger
+            display: block
+            position: absolute
+            top: 49px
+            right: 35px
+            width: 30px
+            height: 2px
+            z-index: 12
+            background: #ffffff
+            &::after
+                position: absolute
+                content: ""
+                background: #ffffff
+                width: 30px
+                height: 2px
+                top: 7px
+            &::before
+                position: absolute
+                content: ""
+                background: #ffffff
+                width: 30px
+                height: 2px
+                top: -7px
+    .social
+        width: 94px
+        justify-content: space-between
+        align-items: center
+        display: flex
+        margin-bottom: 22px
+        padding-top: 25px
+        &_link
+            margin: 0
+    .active
+        display: block
+        position: absolute
+        top: 49px
+        right: 35px
+        width: 30px
+        height: 2px
+        background: none
+        &::after
+            position: absolute
+            content: ""
+            background: #ffffff
+            width: 30px
+            height: 2px
+            top: -7px
+            transform: rotate(45deg)
+        &::before
+                position: absolute
+                content: ""
+                background: #ffffff
+                width: 30px
+                height: 2px
+                top: -7px
+                transform: rotate(-45deg)
+    #navigation
+        display: flex
+        flex-direction: column-reverse
+        justify-content: flex-end
+        opacity: 0
+        background: #9D2929
+        width: 252px
+        height: 282px
+        top: 0
+        right: 0
+        margin: 0
+        z-index: 9
+        transition: all 0.5s
+
+
+           

@@ -1,0 +1,90 @@
+#footer
+    background: #1B1B1C
+    font-size: 14px
+.footer
+    &__contact
+        border-top: 1px solid #4C4C4E
+        border-bottom: 1px solid #4C4C4E
+        height: 87px
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        .container
+            display: flex
+            align-items: center
+        &-facebook
+            padding: 35px 75px 33px 0
+            border-right: 1px solid #4C4C4E
+        &-instagram
+            padding: 31px 75px 36px
+            border-right: 1px solid #4C4C4E
+        &-links
+            text-align: right
+            width: 100%
+            a
+                font-size: 14px
+        &-mail
+            padding: 0 36px
+        &-btn
+            color: $orange
+            i
+                padding-left: 8px
+    &__links
+        padding: 64px 0
+        
+        .container
+            display: flex
+            font-size: 14px
+        &-org
+            padding-right: 40px
+        a
+            font-size: 14px
+            margin-left: 32px
+            color: #727272
+
+@media screen and (max-width: 1062px) and (min-width: 766px)
+    .footer
+        &__contact
+            &-facebook
+                padding: 35px 45px 33px 12px
+            &-instagram
+                padding: 31px 45px 36px
+@media screen and (max-width: 835px)
+    .footer
+        
+        &__links
+            .container
+                justify-content: space-between
+            a
+                margin-left: 0
+@media screen and (max-width: 764px)
+    .footer
+        &__contact
+            .container
+                justify-content: space-between
+            &-facebook
+                width: 50%
+                padding: 0
+                height: 88px
+                display: flex
+                align-items: center
+                justify-content: center
+            &-instagram
+                width: 50%
+                border-right: none
+                padding: 0
+                height: 88px
+                display: flex
+                align-items: center
+                justify-content: center
+            &-links
+                display: none
+        &__links
+            padding: 34px 0 10px
+            .container
+                justify-content: space-between
+                flex-direction: column
+            &-org
+                margin-bottom: 24px
+            a
+                margin-bottom: 24px

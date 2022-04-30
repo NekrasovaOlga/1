@@ -1,0 +1,58 @@
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+body
+    background: #1B1B1C
+    overflow-x: hidden
+.container
+    overflow: hidden
+    color: $white
+    font-family: Gilroy Regular
+    font-size: 18px
+    max-width: 1290px
+    width: 100%
+    margin: 0 auto
+.main-title
+    font-family: Gilroy
+    font-size: 56px
+    line-height: 120%
+.title
+    font-family: Gilroy
+    font-size: 36px
+    line-height: 120%
+.description
+    font-family: Gilroy
+    font-size: 24px
+    line-height: 140%
+a
+    text-decoration: none
+    font-size: 16px
+    font-family: Gilroy
+    color: $white
+.btn
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 6px 32px
+    height: 48px
+    background: rgba(255, 255, 255, 0.08)
+    border-radius: 4px
+
+@media screen and (max-width: 1318px) and (min-width: 1040px)
+    .container
+        max-width: 1000px
+    .title
+        font-size: 28px
+    .main-title
+        margin-top: 16px
+        font-size: 40px
+@media screen and (max-width: 1039px) and (min-width: 0px)
+    .container
+        max-width: 95%
+    .title
+        font-size: 24px
+
+@media screen and (max-width: 719px)
+    .title
+        font-size: 20px

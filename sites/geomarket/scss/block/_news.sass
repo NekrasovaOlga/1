@@ -1,0 +1,69 @@
+#news
+    background: #212122
+    padding: 72px 0
+.news
+    &__block
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &-item
+            width: 410px
+            height: 410px
+            position: relative
+            margin-bottom: 30px
+            border: 1px solid #4C4C4E
+            border-radius: 4px
+            background-repeat: no-repeat
+            background-size: cover
+        &-bg
+            background: linear-gradient(180deg, rgba(49, 49, 49, 0) 15.98%, #212122 85.34%)
+            border-radius: 4px
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+        &-title
+            padding: 0 24px
+            font-size: 24px
+            position: absolute
+            bottom: 66px
+        &-data
+            font-size: 18px
+            padding: 0 24px
+            bottom: 24px
+            position: absolute
+        
+@media screen and (max-width: 1318px) and (min-width: 1042px)
+    .news
+        &__block
+            justify-content: space-between
+            &-item
+                max-width: 320px
+            &-title
+                font-size: 20px
+@media screen and (max-width: 1041px) and (min-width: 720px)
+    .news
+        .services__description
+            p
+                max-width: 43%
+                font-size: 1rem
+        &__block
+            justify-content: space-around
+            &-item
+                max-width: 48%
+                width: 100%
+                height: 279px
+            &-title
+                font-size: 20px    
+@media screen and (max-width: 719px) and (min-width: 0px)
+    .news
+        &__block
+            justify-content: space-around
+            &-item
+                max-width: 100%
+                width: 100%
+                height: 264px
+                padding-right: 10px
+            &-title
+                font-size: 18px

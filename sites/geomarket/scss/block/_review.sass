@@ -1,0 +1,72 @@
+#review
+    position: relative
+    padding-top: 120px
+    margin-bottom: 144px
+.review
+    position: relative
+    &__description
+        display: flex
+        justify-content: space-between
+        padding-bottom: 48px
+        p
+            max-width: 630px
+            width: 100%
+            font-size: 20px
+    &__slider
+        color: $white
+        
+        &-items
+            padding-right: 30px
+        &-item 
+            max-width: 520px  
+            width: 100%            
+            padding: 24px
+            background: #212122
+            border: 1px solid #4C4C4E
+            border-radius: 4px
+        &-title
+            font-size: 24px
+            line-height: 140%
+        &-description
+            color: #949FA3
+            font-size: 16px
+            line-height: 145%
+            padding: 2px 0 33px
+        &-star
+            color: #FDCB00
+            margin-bottom: 20px
+        &-text
+            font-size: 18px
+            line-height: 145%
+            
+@media screen and (max-width: 1318px) and (min-width: 1042px)
+    .review
+        &__description
+            p
+                max-width: 60%
+                font-size: 1rem
+@media screen and (max-width: 1133px)
+    #review
+        padding-top: 0
+@media screen and (max-width: 1041px) and (min-width: 567px)
+    .review
+        &__description
+            p
+                max-width: 45%
+                font-size: 1rem
+        &__slider 
+            &-item 
+                width: 420px
+@media screen and (max-width: 566px) and (min-width: 0px)
+     .review
+        &__description
+            flex-direction: column
+            p
+                padding-top: 38px
+                font-size: 16px 
+        &__slider 
+            &-item 
+                width: 310px
+            &-text
+                font-size: 16px
+                line-height: 150%

@@ -1,0 +1,106 @@
+.properties
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 100%
+    margin-top: 32px
+    &__box
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-top: 60px
+        &-btn
+            max-width: 200px
+            margin-top: 25px
+        &-item
+            max-width: 400px
+            width: 100%
+            font-size: 18px
+            margin-bottom: 35px
+
+        &-img
+            position: relative
+            border-radius: 8px
+            img
+                width: 100%
+        &-rent
+            position: absolute
+            z-index: 5
+            background: $orange
+            width: 115px
+            height: 40px
+            color: #ffffff
+            display: flex
+            align-items: center
+            padding-left: 15px
+            border-bottom-right-radius: 50px
+            border-top-left-radius: 8px
+        &-title
+            margin-top: 25px
+            margin-bottom: 11px
+            font-size: 20px
+        &-adress
+            position: relative
+            padding-left: 39px
+            line-height: 24px
+            display: flex
+            align-items: center
+            margin-bottom: 13px
+            &::after
+               position: absolute
+               content: ''
+               background: url(../img/location.svg)
+               width: 24px
+               height: 24px
+               left: 0
+               top: 0
+               background-repeat: no-repeat 
+        &-price
+            color: $orange
+            font-size: 30px
+            margin-top: 20px
+            font-weight: bold
+    &__list
+        display: flex
+        align-items: center
+        height: 24px
+        max-width: 271px
+        justify-content: space-between
+        &-item
+            display: flex
+            align-items: center
+            span
+                margin-left: 15px
+
+@media screen and ( max-width: 1260px ) and (min-width: 1112px)
+    .properties
+        &__box
+            &-item
+                max-width: 350px
+@media screen and ( max-width: 1111px ) and (min-width:965px)
+    .properties
+        &__box
+            &-item
+                max-width: 300px
+@media screen and ( max-width: 964px ) and (min-width: 845px)
+    .properties
+        &__box
+            &-item
+                max-width: 400px
+
+@media screen and ( max-width: 844px ) and (min-width: 741px)
+    .properties
+        &__box
+            &-item
+                max-width: 350px
+@media screen and ( max-width: 740px ) and (min-width: 645px)
+    .properties
+        &__box
+            &-item
+                max-width: 300px
+@media screen and ( max-width: 644px ) and (min-width: 0)
+    .properties
+        &__box
+            &-item
+                max-width: 100%

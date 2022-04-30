@@ -1,0 +1,102 @@
+.reviews
+    padding-top: 155px
+    position: relative
+    &::after
+        position: absolute
+        content: '“'
+        top: 50px
+        left: 0
+        font-size: 500px
+        width: 248px
+        height: 248px
+        z-index: 0
+        color: rgba(0, 0, 0, 0.05)
+    &__box
+        max-width: 1097px
+        width: 100%
+        position: relative
+        margin: 60px auto
+        overflow: hidden
+        &-item
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 100%
+            margin: 0 auto
+            margin-right: 5px
+        &-img
+            position: relative
+            z-index: 4
+            padding-right: 60px
+            padding-bottom: 35px
+            img
+                width: 100%
+                max-width: 560px
+            &::after
+                position: absolute
+                content: ''
+                background: url(../img/reviews-bg.svg)
+                width: 110px
+                height: 110px
+                bottom: 0
+                right: 0
+                background-repeat: no-repeat
+                z-index: -1
+        &-list
+            max-width: 477px
+        &-title
+            font-size: 30px
+            line-height: 38px
+        &-text
+            font-size: 18px
+            line-height: 140%
+            letter-spacing: 0.005em
+            padding-top: 20px
+            padding-bottom: 33px
+        &-home
+            font-size: 12px
+            line-height: 15px
+
+
+@media screen and ( max-width: 1260px ) and (min-width: 960px)
+    .reviews
+        &__box
+            max-width: 900px
+            
+@media screen and ( max-width: 959px ) and (min-width: 835px)
+    .reviews
+        &__box
+            max-width: 800px
+            &-img
+                padding-right: 30px
+                img
+                    max-width: 500px
+@media screen and ( max-width: 834px ) and (min-width: 638px)
+    .reviews
+        &__box
+            max-width: 600px
+            &-img
+                padding-right: 30px
+                img
+                    max-width: 500px
+                &::after
+                    display: none
+            &-text
+                font-size: 1em
+@media screen and ( max-width: 637px ) and (min-width: 0)
+    .reviews
+        padding-top: 45px
+        &::after
+            display: none
+        &__box
+            max-width: 100%
+            &-item
+                flex-direction: column
+            &-img
+                padding-right: 0
+                img
+                    max-width: 500px
+                &::after
+                    display: none
+            &-text
+                font-size: 1em
